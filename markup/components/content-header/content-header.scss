@@ -1,0 +1,41 @@
+.content-header {
+	margin-bottom: 15px;
+  box-shadow: 0 0.063rem 0.125rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include container();
+  padding-bottom: 16px;
+  
+  .car-info {
+    padding-top: 16px;
+  }
+
+  .simple-table {
+    margin-top: 14px;
+  }
+
+}
+
+
+.simple-table {
+  margin: -3px 20px -3px 0;
+  td {
+    line-height: 1.54;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    white-space: nowrap;
+
+    &:first-child {
+      color: $gray--600;
+      padding-right: 10px;
+    }
+
+    &:last-child {
+      color: $gray--700;
+    }
+  }
+}

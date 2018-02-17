@@ -1,0 +1,64 @@
+.header {
+	position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 60px;
+  min-width: 960px;
+  background-color: #fff;
+  width: calc(100% - 60px);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.063rem 0 #e6e6e6;
+
+  h4 {
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 450px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  &__nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: -4px;
+    padding: 0 20px;
+
+    .button {
+      margin: 0 4px;
+    }
+
+  }
+}
+
+.car-name {
+  display: flex;
+  align-items: center;
+
+  &__color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    margin-left: 8px;
+  }
+}
+
+.car-problems {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+
+  svg {
+    fill: $red;
+    margin-right: 8px;
+  }
+
+  span {
+    color: $gray--700;
+    font-weight: 400;
+    line-height: 1;
+  }
+}

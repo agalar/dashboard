@@ -1,0 +1,52 @@
+doctype html
+html(class="no-js", lang="ru")
+
+	include ../components/head/head.pug
+	include ../components/header/header.pug
+	include ../components/content-header/content-header.pug
+	include ../components/nav/nav.pug
+	include ../components/filter/filter.pug
+
+	include ../components/car-info/car-info.pug
+
+	include ../components/footer/footer.pug
+
+
+
+
+
+
+	head
+		+head(head.home)
+
+	body
+		|%=symbols=%
+
+		.page-container
+
+			+nav()
+			
+			+header()
+
+			+b.MAIN.content
+
+				+content-header()
+
+				+e.inner
+					+filter()
+
+					+e.main
+
+						h1  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitaon exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad il.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitaon exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad il.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitaon exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitationem repudiandae nihil.
+
+
+			+footer()
+
+		script(src='%=static=%js/separate-js/svg4everybody.min.js')
+
+		script svg4everybody();
+
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')
+
+		script(src='%=static=%js/separate-js/common.js')

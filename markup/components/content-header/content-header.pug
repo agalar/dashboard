@@ -1,0 +1,49 @@
+mixin content-header(data)
+	+b.HEADER.content-header
+
+		+car-info()
+
+		+b.TABLE.simple-table
+			tr
+				td Оценка
+				td В процессе
+
+			tr
+				td Обновлена
+				td 30.09.17
+
+			tr
+				td Склад
+				td 
+					a(href="#").link Поставить на склад
+
+		+b.TABLE.simple-table
+			tr
+				td Контракт
+				td Комиссия
+
+			tr
+				td Менеджер
+				td Петров Иван
+
+			tr
+				td Оценщик
+				td Сидоров Олег
+
+		+b.TABLE.simple-table
+			tr
+				td Клиент
+
+				td Иванов Иван Иванович
+
+			tr
+				td Телефон
+				td
+					a(href="tel:8 (812) 222-22-22") 8 (812) 222-22-22
+
+
+
+
+
+
+

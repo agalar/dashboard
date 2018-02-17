@@ -1,0 +1,42 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+    include ../components/footer/footer.pug
+    include ../components/header/header.pug
+    include ../components/product-item/product-item.pug
+    include ../components/breadcrumbs/breadcrumbs.pug
+
+
+
+
+
+
+    head
+        +head(head.home)
+
+    body
+        |%=symbols=%
+        
+        +header()
+
+
+        main.content
+            +b.SECTION.default-section
+                +breadcrumbs('Главная', 'Lookbook')
+                
+                +b.HEADER.default-header
+                    h2.h2 Lookbook
+            
+
+
+        +footer()
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')
+
+        script(src='%=static=%js/separate-js/common.js')

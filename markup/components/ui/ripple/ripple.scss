@@ -1,0 +1,49 @@
+[data-ripple] {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  &:hover {
+    .ripple {
+      will-change: transform, opacity;
+    }
+  }
+
+}
+
+[data-ripple="dark"] {
+  .ripple {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+[data-ripple="light"] {
+  .ripple {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.ripple {
+  position: absolute;
+  background-color: rgba(0,0,0,0.15);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+
+  &--animate {
+    animation: ripple 0.75s ease-out;
+  }
+}
+
+
+
+
+@keyframes ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}

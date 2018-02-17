@@ -1,0 +1,69 @@
+mixin nav(data)
+	+b.NAV.nav
+		+e.inner
+			+e.header
+				+b(href="/", data-ripple="light").logo
+					+e.symbol
+						img(src="%=static=%img/content/logo.svg", alt="Логотип CM.Expert")
+
+					+e.desc.nav-hide-content
+						img(src="%=static=%img/content/logo-desc.svg", alt="Логотип CM.Expert")
+
+			+e.UL.list
+				+e.item
+					+e(href="#", data-ripple="light").link
+						+e.SPAN.icon
+							!= pugHelpers.Icon.call(locals, {iconName: 'add-apprasial'})
+						span.nav-hide-content Добавить оценку
+
+				+e.item
+					+e(href="#", data-ripple="light").link--active
+						+e.SPAN.icon.icon-notification
+							!= pugHelpers.Icon.call(locals, {iconName: 'apprasial-list'})
+						span.nav-hide-content Список оцениваемых
+
+				+e.item
+					+e(href="#", data-ripple="light").link
+						+e.SPAN.icon
+							!= pugHelpers.Icon.call(locals, {iconName: 'add-auto'})
+						span.nav-hide-content Добавить автомобиль
+
+				+e.item
+					+e(href="#", data-ripple="light").link
+						+e.SPAN.icon
+							!= pugHelpers.Icon.call(locals, {iconName: 'dashboard'})
+						span.nav-hide-content Панель управления
+
+				+e.item--last
+					+e(href="#", data-ripple="light").link
+						+e.SPAN.icon
+							!= pugHelpers.Icon.call(locals, {iconName: 'stock'})
+						span.nav-hide-content Магазин
+
+				+e.item
+					+e(href="#", data-ripple="light").link
+						+e.SPAN.icon
+							!= pugHelpers.Icon.call(locals, {iconName: 'help'})
+						span.nav-hide-content Помощь
+				+e.item
+					+e(href="#", data-ripple="light").link
+						+e.SPAN.icon
+							!= pugHelpers.Icon.call(locals, {iconName: 'search'})
+						span.nav-hide-content Поиск
+				+e.item
+					+e(href="#", data-ripple="light").link
+						+e.SPAN.icon
+							!= pugHelpers.Icon.call(locals, {iconName: 'settings'})
+						span.nav-hide-content Настройки
+				+e.item
+					+e(data-ripple="light").BUTTON.link.js--show-full-nav
+						+e.SPAN.icon
+							!= pugHelpers.Icon.call(locals, {iconName: 'arrow-big', className: 'nav-arrow-icon'})
+						span.nav-hide-content Изменить вид
+
+
+
+
+
+
+

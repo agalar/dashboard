@@ -1,0 +1,46 @@
+mixin header(data)
+	+b.HEADER.header
+		+b.BUTTON.button-back(data-ripple="dark")
+			+e.SPAN.icon
+				!= pugHelpers.Icon.call(locals, {iconName: 'back'})
+
+
+		+e.info.car-name__
+			h4
+				span Оценка: 
+				|Land Rover Range Rover Evoque 2017
+			+e.color(style="background-color: #000;")
+
+			+b(href="#").car-problems
+				!= pugHelpers.Icon.call(locals, {iconName: 'attantion'})
+
+				span 3 проблемы
+
+
+
+
+
+
+		+e.nav
+			+b.BUTTON.button--disable(data-ripple="light")
+				span Сохранить
+
+			+b.BUTTON.button(data-ripple="light")
+				span Завершить
+
+			+b.button--square(href="#", data-ripple="light")
+				+e.SPAN.icon
+					!= pugHelpers.Icon.call(locals, {iconName: 'download'})
+
+			+b.BUTTON.button--square(data-ripple="light")
+				+e.SPAN.icon
+					!= pugHelpers.Icon.call(locals, {iconName: 'settings'})
+
+
+
+
+
+
+
+
+	

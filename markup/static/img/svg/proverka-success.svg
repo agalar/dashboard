@@ -1,0 +1,14 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" width="14.91" height="11.38" viewBox="0 0 14.91 11.38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>proverka-success</title>
+  <g>
+    <path class="cls-1" d="M15,1.24,5.8,10.49,1.51,6.16" transform="translate(-0.8 -0.53)"/>
+    <polygon points="5 11.38 0 6.33 1.42 4.93 5 8.54 13.49 0 14.91 1.41 5 11.38"/>
+  </g>
+</svg>

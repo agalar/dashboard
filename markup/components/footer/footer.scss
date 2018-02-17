@@ -1,0 +1,25 @@
+.footer {
+	position: fixed;
+  z-index: 9;
+  bottom: 0;
+  left: 60px;
+  min-width: 960px;
+  background-color: #fff;
+  width: calc(100% - 60px);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -0.062rem 0 #e6e6e6;
+
+  @include container();
+
+  &__list {
+    display: flex;
+    margin: 0 -12px;
+    margin-left: auto;
+  }
+
+  &__item {
+    margin: 0 12px;
+  }
+}

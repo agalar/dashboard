@@ -1,0 +1,75 @@
+.filter {
+  width: 260px;
+  height: calc(100vh - 120px);
+  border-right: 1px solid #e6e6e6;
+  background-color: #fff;
+  position: sticky;
+  top: 60px;
+
+  > .button {
+    display: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px
+  }
+
+  @include mq($until: desktop) {
+    position: fixed !important;
+    left: -200px;
+    transition: transform 0.5s $cubic;
+
+    > .button {
+      display: flex;
+      position: absolute;
+      right: -36px;
+      top: 200px;
+    }
+
+    &--active {
+      transform: translateX(260px);
+
+      > .button {
+        background-color: $gray--200;
+
+        &:hover {
+          background-color: darken($gray--200, 10)
+        }
+
+        svg {
+          fill: $gray--400;
+        }
+
+        .filter-show-icon {
+          opacity: 0;
+        }
+
+        .filter-hide-icon {
+          opacity: 1;
+        }
+
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+
+
+  .filter-show-icon, .filter-hide-icon {
+    transition: opacity 0.4s ease-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .filter-hide-icon {
+    transform: translate(-50%, -50%) rotate(180deg);
+    opacity: 0;
+  }
+}
+

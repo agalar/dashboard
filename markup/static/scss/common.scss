@@ -1,0 +1,287 @@
+// Common styles of the project
+
+// @include mq-show-breakpoints((mobile, mobile-m, mobile-l, tablet, tablet-l, desktop, desktop-m, desktop-l), (mobile: 320px, mobile-m: 360px, mobile-l: 480px, tablet:  768px, tablet-l: 1024px, desktop: 1280px, desktop-m: 1366px, desktop-l: 1600px));
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: $gray--200;
+  color: $gray--700;
+  font-weight: 400;
+  font-size: 0.813rem;
+	line-height: 1.3;
+  min-width: 320px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, select, button {
+  outline: none;
+
+  @include mq($from: tablet-l) {
+    &:focus{
+      box-shadow: inset 0 0 0 2px rgba($blue, 0.6);
+      @include disable-mouse-outline();
+    }
+  }
+}
+
+input {
+  outline: none;
+
+  @include mq($from: tablet-l) {
+    &:focus{
+      // border-bottom: 1px solid rgba($green, 0.6);
+      @include disable-mouse-outline();
+    }
+  }
+}
+
+@media (pointer: coarse) {
+  *:focus{
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+
+.media-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Or whatever object-fit you want */
+}
+
+
+h4 {
+  color: $gray--700;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+
+  span {
+    color: $gray--500;
+  }
+
+}
+
+h5 {
+  color: $gray--700;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+
+p {
+  color: $gray--700;
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 1.54;
+
+  .link {
+    display: inline;
+  }
+} 
+
+
+.scroll-y {
+  @include mq($until: tablet-l) {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.container {
+  @include container();
+}
+
+.disable-hover {
+  pointer-events: none;
+  
+  
+  * {
+    pointer-events: none !important;
+  }
+}
+
+
+.img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  &--full-width {
+    width: 100%;
+  }
+}
+
+
+
+
+.page-container {
+  padding-left: 60px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 1024px;
+  
+  @include mq($from: desktop-m) {
+
+  }
+
+  &--full-nav {
+    padding-left: 240px;
+
+    .header, .footer {
+      left: 240px;
+      width: calc(100% - 240px);
+    }
+
+    .nav-arrow-icon {
+      transform: rotate(180deg);
+    }
+
+    .nav {
+      transform: translateX(0) translateZ(0);
+      transition: none;
+
+      .nav__inner {
+        transform: translateX(0) translateZ(0);
+        transition: none;
+      }
+
+      .nav-hide-content {
+        opacity: 1;
+        transition: none;
+      }
+    }
+
+    .filter {
+      @include mq($until: desktop-m) {
+        position: fixed !important;
+        left: -20px;
+        transition: transform 0.5s $cubic;
+
+        > .button {
+          display: flex;
+          position: absolute;
+          right: -36px;
+          top: 200px;
+        }
+
+        &--active {
+          transform: translateX(260px);
+
+          > .button {
+            background-color: $gray--200;
+
+            &:hover {
+              background-color: darken($gray--200, 10)
+            }
+
+            svg {
+              fill: $gray--400;
+            }
+
+            .filter-show-icon {
+              opacity: 0;
+            }
+
+            .filter-hide-icon {
+              opacity: 1;
+            }
+
+          }
+        }
+      }
+    }
+
+    .content {
+      &__main {
+        @include mq($until: desktop-m) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.icon-notification {
+  position: relative;
+  
+  &::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    pointer-events: none;
+  }
+}
+
+.content {
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  &__main {
+    width: calc(100% - 260px);
+    margin-left: auto;
+    background-color: #fff;
+
+    @include mq($until: desktop) {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
