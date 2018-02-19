@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CM.Expert — оценка и управление складом авто с пробегом</title>
+        <meta content="Оценка и управление складом авто с пробегом" name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="address=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="HandheldFriendly" content="true">
+        <!-- Chrome, Firefox OS and Opera-->
+        <meta name="theme-color" content="#569dd7">
+        <!-- Windows Phone-->
+        <meta name="msapplication-navbutton-color" content="#569dd7">
+        <!-- iOS Safari-->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#569dd7">
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+        <link rel="manifest" href="../favicon/manifest.json">
+        <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#569dd7">
+        <link rel="preload" as="font" type="font/woff2" href="static/fonts/Roboto-Regular.woff2" crossorigin="">
+        <link rel="preload" as="font" type="font/woff2" href="static/fonts/Roboto-Bold.woff2" crossorigin="">
+        <script>
+            var head=document.getElementsByTagName("head")[0];if(-1!=navigator.appVersion.indexOf("Win")){var style_sheet=document.createElement("style");if(style_sheet){style_sheet.setAttribute("type","text/css");var rules=document.createTextNode("::-webkit-scrollbar {width: 8px;background-color: rgba(0,0,0,0);-webkit-border-radius: 100px;}::-webkit-scrollbar:hover {background-color: rgba(0, 0, 0, 0.09);}::-webkit-scrollbar-thumb:vertical {background: rgba(0,0,0,0.5);-webkit-border-radius: 100px;background-clip: padding-box;border: 2px solid rgba(0, 0, 0, 0);min-height: 10px;}::-webkit-scrollbar-thumb:vertical:active {background: rgba(0,0,0,0.61);-webkit-border-radius: 100px;}");style_sheet.styleSheet?style_sheet.styleSheet.cssText=rules.nodeValue:style_sheet.appendChild(rules),head&&head.appendChild(style_sheet)}}
+        </script>
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/mainfuhzyjssx1myga1r1kyb9.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="CM.Expert — оценка и управление складом авто с пробегом">
+        <meta property="og:url" content="http://uc23.ru">
+        <meta property="og:description" content="Оценка и управление складом авто с пробегом">
+        <meta property="og:image" content="../favicon/android-chrome-512x512.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta property="twitter:description" content="">
+        <link rel="image_src" href="../favicon/android-chrome-512x512.png">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="border: 0 !important; clip: rect(0 0 0 0) !important; height: 1px !important; margin: -1px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important;"
+        class="root-svg-symbols-element">
+            <symbol id="add-apprasial" viewBox="0 0 20 18">
+                <title>add-apprasial</title>
+                <path d="M18.83 18H9a1 1 0 0 1-1-1v-4.44A7.5 7.5 0 0 0 11.5 10H17V9h-4.87a7.44 7.44 0 0 0 .43-6H15l5 5v9a1.09 1.09 0 0 1-1.17 1zM17 11h-6v1h6zm0 2h-6v1h6zM5.5 11A5.5 5.5 0 1 1 11 5.5 5.5 5.5 0 0 1 5.5 11zM9 5H6V2H5v3H2v1h3v3h1V6h3z"
+                />
+            </symbol>
+            <symbol id="add-auto" viewBox="0 0 20 18">
+                <title>add-auto</title>
+                <path d="M19 18h-1a1 1 0 0 1-1-1v-1H7v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-4.15a7.53 7.53 0 0 0 1.1.13 1.48 1.48 0 0 0 2.89-.41A7.51 7.51 0 0 0 12.13 9H19l-1.75-4h-4.28a7.57 7.57 0 0 0-.13-1H18l2 5v8a1 1 0 0 1-1 1zm-1.5-7a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm-12 0A5.5 5.5 0 1 1 11 5.5 5.5 5.5 0 0 1 5.5 11zM9 5H6V2H5v3H2v1h3v3h1V6h3z"
+                />
+            </symbol>
+            <symbol id="add" viewBox="0 0 16 16">
+                <title>add</title>
+                <path d="M6.43.15a8 8 0 1 0 9.42 9.42A8 8 0 0 0 6.43.15zM12 9H9v3H7V9H4V7h3V4h2v3h3z" />
+            </symbol>
+            <symbol id="apprasial-list" viewBox="0 0 16 18">
+                <title>apprasial-list</title>
+                <path d="M16 14a1.09 1.09 0 0 1-1.17 1H5a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6l5 5v9zm-3-8H7v1h6zm0 2H7v1h6zm0 2H7v1h6zm-1 6v1a1.09 1.09 0 0 1-1.17 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2v12a1 1 0 0 0 1 1z" />
+            </symbol>
+            <symbol id="arrow-big" viewBox="0 0 9.2 16.34">
+                <title>arrow</title>
+                <path d="M1.45 16.34L0 14.97l6.44-6.8L0 1.38 1.45 0 9.2 8.17l-7.75 8.17z" />
+            </symbol>
+            <symbol id="arrow-small" viewBox="0 0 8.69 4.89">
+                <title>arrow-small</title>
+                <path d="M4.35 4.89L0 .72.69 0l3.66 3.5L8 0l.69.72-4.34 4.17z" />
+            </symbol>
+            <symbol id="attantion" viewBox="0 0 16 16">
+                <title>attantion</title>
+                <path d="M8 0a8 8 0 1 0 8 8 8 8 0 0 0-8-8zm1 12H7v-2h2zm0-3H7V4h2z" />
+            </symbol>
+            <symbol id="back" viewBox="0 0 16.41 15.83">
+                <title>back</title>
+                <path d="M16.41 6.91H3.83l5.5-5.5L7.91 0 0 7.91l7.91 7.92 1.42-1.42-5.5-5.5h12.58v-2z" />
+            </symbol>
+            <symbol id="calc" viewBox="0 0 14 16">
+                <title>calc</title>
+                <path d="M13 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zM4 14H2v-2h2zm0-3H2V9h2zm0-3H2V6h2zm4 6H6v-2h2zm0-3H6V9h2zm0-3H6V6h2zm4 6h-2v-2h2zm0-3h-2V9h2zm0-3h-2V6h2zm0-4H2V2h10z" />
+            </symbol>
+            <symbol id="calendar" viewBox="0 0 16 16">
+                <title>calendar</title>
+                <path d="M15 16H1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h1v1.5a1.5 1.5 0 1 0 3 0V1h6v1.5a1.5 1.5 0 1 0 3 0V1h1a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1zM14 6H2v8h12zm-2-6h1v3h-1zM3 0h1v3H3z" />
+            </symbol>
+            <symbol id="check" viewBox="0 0 14 11">
+                <title>check</title>
+                <path d="M4.68 11L0 6.12 1.29 4.8l3.4 3.53L12.71 0 14 1.32 4.68 11z" />
+            </symbol>
+            <symbol id="circle" viewBox="0 0 12 12">
+                <title>circle</title>
+                <path d="M6 0a6 6 0 1 1-6 6 6 6 0 0 1 6-6z" />
+            </symbol>
+            <symbol id="close" viewBox="0 0 14 14">
+                <title>close</title>
+                <path d="M14 12.63L12.63 14 7 8.37 1.37 14 0 12.63 5.62 7 0 1.37 1.37 0 7 5.62 12.63 0 14 1.37 8.37 7z" />
+            </symbol>
+            <symbol id="dashboard" viewBox="0 0 18 18">
+                <title>dashboard</title>
+                <path d="M17 0h-1a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-5 6h-1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zM7 4H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm-5 9H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"
+                />
+            </symbol>
+            <symbol id="delete" viewBox="0 0 9.41 9.41">
+                <title>delete</title>
+                <path d="M9.41 1.42L8 0 4.71 3.29 1.41 0 0 1.42l3.29 3.29L0 7.99l1.41 1.42 3.3-3.29L8 9.41l1.41-1.42-3.29-3.28 3.29-3.29z" />
+            </symbol>
+            <symbol id="download" viewBox="0 0 16 16">
+                <title>download</title>
+                <path d="M15 16H1a1 1 0 0 1-1-1V8a1 1 0 1 1 2 0v6h12V8a1 1 0 1 1 2 0v7a1 1 0 0 1-1 1zm-7-5L4 7h3V1a1 1 0 1 1 2 0v6h3z" />
+            </symbol>
+            <symbol id="drop-down" viewBox="0 0 7 3.5">
+                <title>drop-down</title>
+                <path d="M0 0l3.5 3.5L7 0H0z" />
+            </symbol>
+            <symbol id="exclude" viewBox="0 0 16 16">
+                <title>exclude</title>
+                <path d="M8 0a8 8 0 1 0 8 8 8 8 0 0 0-8-8zm4 9H4V7h8z" />
+            </symbol>
+            <symbol id="filter" viewBox="0 0 971.986 971.986">
+                <path d="M370.216 459.3c10.2 11.1 15.8 25.6 15.8 40.6v442c0 26.601 32.1 40.101 51.1 21.4l123.3-141.3c16.5-19.8 25.6-29.601 25.6-49.2V500c0-15 5.7-29.5 15.8-40.601L955.615 75.5c26.5-28.8 6.101-75.5-33.1-75.5h-873c-39.2 0-59.7 46.6-33.1 75.5l353.801 383.8z"
+                />
+            </symbol>
+            <symbol id="help" viewBox="0 0 16 16">
+                <title>help</title>
+                <path d="M8 0a8 8 0 1 0 8 8 8 8 0 0 0-8-8zm1 12.5H7v-2h2zm0-3.18v.18H7V8a.5.5 0 0 1 .5-.5H8a1 1 0 1 0-1-1H5a3 3 0 1 1 4 2.82z" />
+            </symbol>
+            <symbol id="info" viewBox="0 0 16 16">
+                <title>info</title>
+                <path d="M8 0a8 8 0 1 0 8 8 8 8 0 0 0-8-8zm1 12H7V7h2zm0-6H7V4h2z" />
+            </symbol>
+            <symbol id="locked" viewBox="0 0 10 11">
+                <title>locked</title>
+                <path d="M9 11H1a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1V3.5A3.5 3.5 0 0 1 4.5 0h1A3.5 3.5 0 0 1 9 3.5V5a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1zM6 2H4a1 1 0 0 0-1 1v2h4V3a1 1 0 0 0-1-1z" />
+            </symbol>
+            <symbol id="logo" viewBox="0 0 29.36 32">
+                <title>logo</title>
+                <path class="cls-1" d="M24.43 10.89a9.71 9.71 0 0 1 .06 10.77l-8.11-5.34 8.05-5.43z" transform="translate(-.38 -.32)" />
+                <path class="cls-2" d="M16.38.32a16 16 0 0 1 13.26 7.05l-5.21 3.52a9.71 9.71 0 1 0 .06 10.77l5.25 3.46A16 16 0 1 1 16.38.32z" transform="translate(-.38 -.32)" />
+            </symbol>
+            <symbol id="proverka-success" viewBox="0 0 14.91 11.38">
+                <title>proverka-success</title>
+                <path class="cls-1" d="M15 1.24l-9.2 9.25-4.29-4.33" transform="translate(-.8 -.53)" />
+                <path d="M5 11.38L0 6.33l1.42-1.4L5 8.54 13.49 0l1.42 1.41L5 11.38z" />
+            </symbol>
+            <symbol id="proverka1" viewBox="0 0 16 16">
+                <title>proverka1</title>
+                <path d="M8 16a8 8 0 1 1 8-8 8 8 0 0 1-8 8zM2 8a6 6 0 0 0 1.11 3.5l8.39-8.39A6 6 0 0 0 2 8zm10.89-3.5L4.5 12.89a6 6 0 0 0 8.39-8.39z" />
+            </symbol>
+            <symbol id="proverka2" viewBox="0 0 15 15.99">
+                <title>proverka2</title>
+                <path d="M7 .67L7.67 0 12 4.33l-.67.67zm1.59 6.34l6.4 6.4-1.57 1.58-6.4-6.4-1.39 1.39-3.64-3.63 4.36-4.36 3.63 3.63zm-4.26 5L0 7.67.67 7 5 11.33zm-3.34 2h7a1 1 0 0 1 1 1v1H0v-1a1 1 0 0 1 1-1.02z" />
+            </symbol>
+            <symbol id="proverka3" viewBox="0 0 18 12">
+                <title>proverka3</title>
+                <path d="M6 6a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm2 1H4a4 4 0 0 0-4 4v1h12v-1a4 4 0 0 0-4-4zm6 0h-2.38A4 4 0 0 1 13 10v2h5v-1a4 4 0 0 0-4-4zm-1.5-1A2.5 2.5 0 1 0 10 3.5 2.5 2.5 0 0 0 12.5 6z" />
+            </symbol>
+            <symbol id="proverka4" viewBox="0 0 9 16">
+                <title>proverka4</title>
+                <path d="M3 0L0 9h4l-3 7L9 6H5l3-6z" />
+            </symbol>
+            <symbol id="radius" viewBox="0 0 11 14">
+                <title>radius</title>
+                <path d="M5.5 0A5.56 5.56 0 0 0 0 5.63C0 8.73 5.5 14 5.5 14S11 8.73 11 5.63A5.56 5.56 0 0 0 5.5 0zm0 12.59c-2-2-4.5-5.22-4.5-7A4.57 4.57 0 0 1 5.5 1 4.57 4.57 0 0 1 10 5.63c0 1.73-2.5 4.92-4.5 6.96z" />
+                <path d="M5.5 3A2.5 2.5 0 1 0 8 5.5 2.5 2.5 0 0 0 5.5 3zm0 4A1.5 1.5 0 1 1 7 5.5 1.5 1.5 0 0 1 5.5 7z" />
+            </symbol>
+            <symbol id="refresh" viewBox="0 0 15.99 14">
+                <title>refresh</title>
+                <path d="M8.99 14a7 7 0 0 1-5.23-2.39l1.57-1.22A5 5 0 1 0 4.1 6h1.89l-3 3-3-3h2.1a7 7 0 1 1 6.9 8z" />
+            </symbol>
+            <symbol id="region" viewBox="0 0 14 14">
+                <title>region</title>
+                <path d="M12.98 1.02l-5.21 12-1.31-5.51-5.44-1.28 12-5.21m0-1a1 1 0 0 0-.5.06l-12 5.21a1 1 0 0 0 .17 1.93L5.61 8.4l1.16 4.81a1 1 0 0 0 .91.78h.09a1 1 0 0 0 .94-.61l5.21-12A1 1 0 0 0 12.98 0z" />
+            </symbol>
+            <symbol id="scoring1" viewBox="0 0 6.01 16.01">
+                <title>scoring1</title>
+                <path d="M6.01 16.01h-2V3.51L1.46 6.02 0 4.56 4.56 0h1.45z" />
+            </symbol>
+            <symbol id="search" viewBox="0 0 16.01 16">
+                <title>search</title>
+                <path d="M15.72 15.04l-.68.68a1 1 0 0 1-1.36 0l-3.73-3.73a6.55 6.55 0 1 1 2-2l3.73 3.73a1 1 0 0 1 .04 1.32zM6.51 1.99A4.5 4.5 0 1 0 11 6.5a4.5 4.5 0 0 0-4.49-4.51z" />
+            </symbol>
+            <symbol id="settings" viewBox="0 0 16 16">
+                <title>settings</title>
+                <path d="M8 11.01a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm8-2v-2h-1.61a6.53 6.53 0 0 0-1-2.65l1-1.11-1.6-1.64-1.17 1A6.51 6.51 0 0 0 9 1.4V0H7v1.35a6.5 6.5 0 0 0-2.67 1l-1.09-1-1.63 1.67 1 1.37A6.55 6.55 0 0 0 1.5 7H0v2h1.44a6.54 6.54 0 0 0 1 2.6l-1.07 1 1.65 1.6 1.48-1.05A6.53 6.53 0 0 0 7 14.26V16h2v-1.5a6.83 6.83 0 0 0 2.58-1.17l1 1.09 1.63-1.63-1-1.25A6.53 6.53 0 0 0 14.32 9z"
+                />
+            </symbol>
+            <symbol id="sorting" viewBox="0 0 5 4">
+                <title>sorting</title>
+                <path d="M0 0l2.5 4L5 0z" />
+            </symbol>
+            <symbol id="stock" viewBox="0 0 20 18">
+                <title>stock</title>
+                <path d="M19 18h-1a1 1 0 0 1-1-1v-1H7v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9l2-5h12l2 5v8a1 1 0 0 1-1 1zM6.5 14A1.5 1.5 0 1 0 5 12.5 1.5 1.5 0 0 0 6.5 14zm10.75-9H6.75L5 9h14zm.25 6a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zM13.25 1H2.75L1 5h3.33L3.5 7.42a1.5 1.5 0 1 0-1 2.58 1.47 1.47 0 0 0 .5-.1V13a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5l2-5h12l1 3h-1z"
+                />
+            </symbol>
+            <symbol id="trasher" viewBox="0 0 14 16">
+                <title>trasher</title>
+                <path d="M13 5v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5H0V4a1 1 0 0 1 1-1h3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2h3a1 1 0 0 1 1 1v1zM8 2H6v1h2z" />
+            </symbol>
+            <symbol id="unlocked" viewBox="0 0 10 11">
+                <title>unlocked</title>
+                <path d="M9 11H1a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1V3.5A3.5 3.5 0 0 1 4.5 0H7v2H4a1 1 0 0 0-1 1v2h6a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1z" />
+            </symbol>
+        </svg>
+        <div class="page-container">
+            <nav class="nav">
+                <div class="nav__inner">
+                    <div class="nav__header"><a class="logo" href="/" data-ripple="light"><span class="logo__symbol"><img src="static/img/content/logo.svg" alt="Логотип CM.Expert"></span><span class="logo__desc nav-hide-content"><img src="static/img/content/logo-desc.svg" alt="Логотип CM.Expert"></span></a>
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#" data-ripple="light"><span class="nav__icon">
+            <svg class="icon__add-apprasial" width="20px" height="18px">
+                <use xlink:href="#add-apprasial"></use>
+            </svg>
+        </span><span class="nav-hide-content">Добавить оценку</span></a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link nav__link--active" href="#" data-ripple="light"><span class="nav__icon icon-notification">
+            <svg class="icon__apprasial-list" width="16px" height="18px">
+                <use xlink:href="#apprasial-list"></use>
+            </svg>
+        </span><span class="nav-hide-content">Список оцениваемых</span></a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#" data-ripple="light"><span class="nav__icon">
+            <svg class="icon__add-auto" width="20px" height="18px">
+                <use xlink:href="#add-auto"></use>
+            </svg>
+        </span><span class="nav-hide-content">Добавить автомобиль</span></a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#" data-ripple="light"><span class="nav__icon">
+            <svg class="icon__dashboard" width="18px" height="18px">
+                <use xlink:href="#dashboard"></use>
+            </svg>
+        </span><span class="nav-hide-content">Панель управления</span></a>
+                        </li>
+                        <li class="nav__item nav__item--last"><a class="nav__link" href="#" data-ripple="light"><span class="nav__icon">
+            <svg class="icon__stock" width="20px" height="18px">
+                <use xlink:href="#stock"></use>
+            </svg>
+        </span><span class="nav-hide-content">Магазин</span></a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#" data-ripple="light"><span class="nav__icon">
+            <svg class="icon__help" width="16px" height="16px">
+                <use xlink:href="#help"></use>
+            </svg>
+        </span><span class="nav-hide-content">Помощь</span></a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#" data-ripple="light"><span class="nav__icon">
+            <svg class="icon__search" width="16px" height="16px">
+                <use xlink:href="#search"></use>
+            </svg>
+        </span><span class="nav-hide-content">Поиск</span></a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#" data-ripple="light"><span class="nav__icon">
+            <svg class="icon__settings" width="16px" height="16px">
+                <use xlink:href="#settings"></use>
+            </svg>
+        </span><span class="nav-hide-content">Настройки</span></a>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__link js-show-full-nav" data-ripple="light"><span class="nav__icon">
+            <svg class="nav-arrow-icon" width="9px" height="16px">
+                <use xlink:href="#arrow-big"></use>
+            </svg>
+        </span><span class="nav-hide-content">Изменить вид</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <header class="header">
+                <button class="button-back" data-ripple="dark"><span class="button-back__icon">
+            <svg class="icon__back" width="16px" height="15px">
+                <use xlink:href="#back"></use>
+            </svg>
+        </span>
+                </button>
+                <div class="header__info car-name">
+                    <h4><span>Оценка: </span>Land Rover Range Rover Evoque 2017</h4>
+                    <div class="car-name__color" style="background-color: #000;">
+                    </div>
+                    <a class="car-problems" href="#">
+                        <svg class="icon__attantion" width="16px" height="16px">
+                            <use xlink:href="#attantion"></use>
+                        </svg>
+                        <span>3 проблемы</span>
+                    </a>
+                </div>
+                <div class="header__nav">
+                    <button class="button button--disable" data-ripple="light"><span>Сохранить</span>
+                    </button>
+                    <button class="button" data-ripple="light"><span>Завершить</span>
+                    </button><a class="button button--square" href="#" data-ripple="light"><span class="button__icon">
+            <svg class="icon__download" width="16px" height="16px">
+                <use xlink:href="#download"></use>
+            </svg>
+        </span></a>
+                    <button class="button button--square" data-ripple="light"><span class="button__icon">
+            <svg class="icon__settings" width="16px" height="16px">
+                <use xlink:href="#settings"></use>
+            </svg>
+        </span>
+                    </button>
+                </div>
+            </header>
+            <main class="content" role="main">
+                <header class="sub-header">
+                    <div class="car-info">
+                        <div class="car-info__img">
+                            <img class="media-cover" src="static/img/assets/sub-header/car.jpg" srcset="static/img/assets/sub-header/car@2x.jpg 2x" alt="" data-object-fit="cover">
+                        </div>
+                        <div class="car-info__desc">XWEHN812BE0011152, 2 поколение рестайлинг, универсал, механика, бензин, 1.8 л, 122 лс, передний привод, левый руль, 50 000 км, битый
+                        </div>
+                    </div>
+                    <table class="simple-table">
+                        <tr>
+                            <td>Оценка</td>
+                            <td>В процессе</td>
+                        </tr>
+                        <tr>
+                            <td>Обновлена</td>
+                            <td>30.09.17</td>
+                        </tr>
+                        <tr>
+                            <td>Склад</td>
+                            <td> <a class="link" href="#">Поставить на склад</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="simple-table">
+                        <tr>
+                            <td>Контракт</td>
+                            <td>Комиссия</td>
+                        </tr>
+                        <tr>
+                            <td>Менеджер</td>
+                            <td>Петров Иван</td>
+                        </tr>
+                        <tr>
+                            <td>Оценщик</td>
+                            <td>Сидоров Олег</td>
+                        </tr>
+                    </table>
+                    <table class="simple-table">
+                        <tr>
+                            <td>Клиент</td>
+                            <td>Иванов Иван Иванович</td>
+                        </tr>
+                        <tr>
+                            <td>Телефон</td>
+                            <td><a href="tel:8 (812) 222-22-22">8 (812) 222-22-22</a>
+                            </td>
+                        </tr>
+                    </table>
+                </header>
+                <div class="content__inner">
+                    <aside class="filter is-sticky">
+                        <button class="button button--square js-toggle-filter" data-ripple="light"><span class="button__icon">
+            <svg class="filter-show-icon" width="16" height="971px">
+                <use xlink:href="#filter"></use>
+            </svg>
+        
+            <svg class="filter-hide-icon" width="9px" height="16px">
+                <use xlink:href="#arrow-big"></use>
+            </svg>
+        </span>
+                        </button>
+                        <div class="filter__inner js-custom-scroll">
+                            <h5>Параметры подбора</h5>
+                            <ul class="filter__list">
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Регион: </span><a class="link" href="#">Москва </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Срок: </span><a class="link" href="#">Актуальные </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Продавцы: </span><a class="link" href="#">Все </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Сайты: </span><a class="link" href="#">Все </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Год выпуска: </span><a class="link" href="#">2007-2008 </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Поколение: </span><a class="link" href="#">Рестайлинг </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Кузов: </span><a class="link" href="#">Внедорожник 5 дв </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">КПП: </span><a class="link" href="#">Автомат </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Двигатель: </span><a class="link" href="#">Бензин </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Объем: </span><a class="link" href="#">От 3.4 л до 3.6 л </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Мощность: </span><a class="link" href="#">От 221 лс до 331 л </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Привод: </span><a class="link" href="#">Полный </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Руль: </span><a class="link" href="#">Левый </a><span class="filter__count">7</span>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Модели-близнецы: </span><a class="link" href="#">Не показывать</a>
+                                </li>
+                                <li class="filter__item" tabindex="0">
+                                    <button class="button-delete js-delete-filter-item">
+                                        <svg class="icon__delete" width="9px" height="9px">
+                                            <use xlink:href="#delete"></use>
+                                        </svg>
+
+                                    </button><span class="filter__name">Антипробуксовочная система: </span><a class="link" href="#">Не указано</a>
+                                </li>
+                            </ul>
+                            <button class="link js-toggle-filter-options"><span>Добавить опции</span>
+                                <svg class="arrow-small-blue" width="8px" height="4px">
+                                    <use xlink:href="#arrow-small"></use>
+                                </svg>
+
+                            </button>
+                            <div class="filter__more more-filter-items">
+                                <div class="input-default">
+                                    <input class="input-default__input" required="required" name="login-form" type="search" />
+                                    <label class="input-default__label"><span class="input-default__placeholder">Поиск опции</span>
+                                    </label>
+                                </div>
+                                <ul class="filter__list">
+                                    <li class="filter__item" tabindex="0">
+                                        <button class="button-delete js-delete-filter-item">
+                                            <svg class="icon__delete" width="9px" height="9px">
+                                                <use xlink:href="#delete"></use>
+                                            </svg>
+
+                                        </button><span class="filter__name">Климат: </span><a class="link" href="#">Однозонный </a><span class="filter__count">5</span>
+                                    </li>
+                                    <li class="filter__item" tabindex="0">
+                                        <button class="button-delete js-delete-filter-item">
+                                            <svg class="icon__delete" width="9px" height="9px">
+                                                <use xlink:href="#delete"></use>
+                                            </svg>
+
+                                        </button><span class="filter__name">Сигнализация: </span><a class="link" href="#">Есть </a><span class="filter__count">7</span>
+                                    </li>
+                                    <li class="filter__item" tabindex="0">
+                                        <button class="button-delete js-delete-filter-item">
+                                            <svg class="icon__delete" width="9px" height="9px">
+                                                <use xlink:href="#delete"></use>
+                                            </svg>
+
+                                        </button><span class="filter__name">АВС: </span><a class="link" href="#">Есть </a><span class="filter__count">7</span>
+                                    </li>
+                                    <li class="filter__item" tabindex="0">
+                                        <button class="button-delete js-delete-filter-item">
+                                            <svg class="icon__delete" width="9px" height="9px">
+                                                <use xlink:href="#delete"></use>
+                                            </svg>
+
+                                        </button><span class="filter__name">Иммобилайзер: </span><a class="link" href="#">Есть </a><span class="filter__count">7</span>
+                                    </li>
+                                    <li class="filter__item" tabindex="0">
+                                        <button class="button-delete js-delete-filter-item">
+                                            <svg class="icon__delete" width="9px" height="9px">
+                                                <use xlink:href="#delete"></use>
+                                            </svg>
+
+                                        </button><span class="filter__name">Центральный замок: </span><a class="link" href="#">Есть </a><span class="filter__count">7</span>
+                                    </li>
+                                    <li class="filter__item" tabindex="0">
+                                        <button class="button-delete js-delete-filter-item">
+                                            <svg class="icon__delete" width="9px" height="9px">
+                                                <use xlink:href="#delete"></use>
+                                            </svg>
+
+                                        </button><span class="filter__name">Люк: </span><a class="link" href="#">Есть </a><span class="filter__count">7</span>
+                                    </li>
+                                    <li class="filter__item" tabindex="0">
+                                        <button class="button-delete js-delete-filter-item">
+                                            <svg class="icon__delete" width="9px" height="9px">
+                                                <use xlink:href="#delete"></use>
+                                            </svg>
+
+                                        </button><span class="filter__name">Диски: </span><a class="link" href="#">Есть </a><span class="filter__count">7</span>
+                                    </li>
+                                    <li class="filter__item" tabindex="0">
+                                        <button class="button-delete js-delete-filter-item">
+                                            <svg class="icon__delete" width="9px" height="9px">
+                                                <use xlink:href="#delete"></use>
+                                            </svg>
+
+                                        </button><span class="filter__name">Ксенон: </span><a class="link" href="#">Есть </a><span class="filter__count">7</span>
+                                    </li>
+                                    <li class="filter__item" tabindex="0">
+                                        <button class="button-delete js-delete-filter-item">
+                                            <svg class="icon__delete" width="9px" height="9px">
+                                                <use xlink:href="#delete"></use>
+                                            </svg>
+
+                                        </button><span class="filter__name">Электропривод сидений с памятью: </span><a class="link" href="#">Есть </a><span class="filter__count">5</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="content__main">
+                        <header class="content-header">
+                            <table class="table-header">
+                                <thead>
+                                    <tr>
+                                        <th>Авто на рынке</th>
+                                        <th>Средний пробег</th>
+                                        <th>Средняя цена</th>
+                                        <th>Коррекция по пробегу</th>
+                                        <th>Мин. цена нового</th>
+                                        <th class="table-header__info">Скоринг
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>7 шт <span class="table-header__count">(2) </span>
+                                        </td>
+                                        <td>169 147 км</td>
+                                        <td>386 143 ₽</td>
+                                        <td>+ 32 963 ₽</td>
+                                        <td>300 000 000 ₽</td>
+                                        <td class="table-header__info"><span class="table-header__notifi">1</span>46 дней
+                                            <div class="tooltip tooltip--right">
+                                                <svg class="icon-help-gray" width="16px" height="16px">
+                                                    <use xlink:href="#help"></use>
+                                                </svg>
+
+                                                <div class="tooltip__inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo dolore quibusdam fuga eum sapiente explicabo voluptatum assumenda autem, itaque iure recusandae nulla est quod dolorum quam nihil exercitationem
+                                                    obcaecati.
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </header>
+                        <section class="page-content">
+                            <div class="tabs js-tabs">
+                                <ul class="tabs__tab-list" role="tablist">
+                                    <li role="presentation"><a class="tabs__trigger js-tab-trigger button button button--transparent" href="#section-schedule" data-ripple="dark" role="tab" aria-controls="section-schedule">График</a>
+                                    </li>
+                                    <li role="presentation"><a class="tabs__trigger js-tab-trigger is-selected button button button--transparent" href="#section-list" data-ripple="dark" role="tab" aria-controls="section-schedule">Список</a>
+                                    </li>
+                                    <li role="presentation"><a class="tabs__trigger js-tab-trigger button button button--transparent" href="#section-schedule" data-ripple="dark" role="tab" aria-controls="section-forecast">Прогноз</a>
+                                    </li>
+                                </ul>
+                                <section class="tabs__panel js-tab-panel" id="section-schedule" role="tabpanel">
+                                    <h2>
+                                                           Lorem ipsum dolor<br>sit amet, consectetur adipisicing elit. Possimus, <br>blanditiis placeat, cupiditate atque consequuntur <br>optio modi quibusdam. Quasi, ratione <br>et veritatis! Nemo recusandae libero, <br>amet optio, nisi accusamus <br>doloribus minima!
+                                                          Lorem ipsum dolor<br>sit amet, consectetur adipisicing elit. Possimus, <br>blanditiis placeat, cupiditate atque consequuntur <br>optio modi quibusdam. Quasi, ratione <br>et veritatis! Nemo recusandae libero, <br>amet optio, nisi accusamus <br>doloribus minima!
+                                                          Lorem ipsum dolor<br>sit amet, consectetur adipisicing elit. Possimus, <br>blanditiis placeat, cupiditate atque consequuntur <br>optio modi quibusdam. Quasi, ratione <br>et veritatis! Nemo recusandae libero, <br>amet optio, nisi accusamus <br>doloribus minima!
+                                                          Lorem ipsum dolor<br>sit amet, consectetur adipisicing elit. Possimus, <br>blanditiis placeat, cupiditate atque consequuntur <br>optio modi quibusdam. Quasi, ratione <br>et veritatis! Nemo recusandae libero, <br>amet optio, nisi accusamus <br>doloribus minima!
+                                                        </h2>
+                                </section>
+                                <section class="tabs__panel js-tab-panel" id="section-list" role="tabpanel">
+                                    <table class="table">
+                                        <thead class="table__thead">
+                                            <tr class="table__row">
+                                                <th class="table__th">
+                                                    <button data-ripple="dark">Р</button>
+                                                </th>
+                                                <th class="table__th">
+                                                    <button data-ripple="dark">ПР</button>
+                                                </th>
+                                                <th class="table__th">
+                                                    <button data-ripple="dark">Автомобиль</button>
+                                                </th>
+                                                <th class="table__th">
+                                                    <button data-ripple="dark">Пробег</button>
+                                                </th>
+                                                <th class="table__th">
+                                                    <button data-ripple="dark">Срок</button>
+                                                </th>
+                                                <th class="table__th">
+                                                    <button data-ripple="dark">Расст.</button>
+                                                </th>
+                                                <th class="table__th">
+                                                    <button data-ripple="dark">Цена</button>
+                                                </th>
+                                                <th class="table__th">
+                                                    <button data-ripple="dark">Продавец</button>
+                                                </th>
+                                                <th class="table__th">
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table__tbody">
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row table__row--selected">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__row">
+                                                <td class="table__td">10
+                                                </td>
+                                                <td class="table__td">14
+                                                </td>
+                                                <td class="table__td"><a class="link" href="#">Land Rover Range Rover Evoque 2017</a><span class="table__desc">Механика</span>
+                                                </td>
+                                                <td class="table__td">50 000 км
+                                                </td>
+                                                <td class="table__td">65 д
+                                                </td>
+                                                <td class="table__td">500 км
+                                                </td>
+                                                <td class="table__td"> <span class="table__price">99 200 670</span>
+                                                </td>
+                                                <td class="table__td"><span>АвтоГермес Красная сосна</span><span class="table__desc">Бутово, Московская обл.</span>
+                                                </td>
+                                                <td class="table__td">
+                                                    <button class="add-remove js-toggle-car-item"></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                                <section class="tabs__panel js-tab-panel" id="section-forecast" role="tabpanel">
+                                    <h2>Lorem ipsum dolor<br>sit amet, consectetur adipisicing elit. Possimus, <br>blanditiis placeat, cupiditate atque consequuntur <br>optio modi quibusdam. Quasi, ratione <br>et veritatis! Nemo recusandae libero, <br>amet optio, nisi accusamus <br>doloribus minima!
+                                                          Lorem ipsum dolor<br>Lorem ipsum dolor<br>sit amet, consectetur adipisicing elit. Possimus, <br>blanditiis placeat, cupiditate atque consequuntur <br>optio modi quibusdam. Quasi, ratione <br>et veritatis! Nemo recusandae libero, <br>amet optio, nisi accusamus <br>doloribus minima!
+                                                          Lorem ipsum dolor<br>sit amet, consectetur adipisicing elit. Possimus, <br>blanditiis placeat, cupiditate atque consequuntur <br>optio modi quibusdam. Quasi, ratione <br>et veritatis! Nemo recusandae libero, <br>amet optio, nisi accusamus <br>doloribus minima!
+                                                          sit amet, consectetur adipisicing elit. Possimus, <br>blanditiis placeat, cupiditate atque consequuntur <br>optio modi quibusdam. Quasi, ratione <br>et veritatis! Nemo recusandae libero, <br>amet optio, nisi accusamus <br>doloribus minima!
+                                                        </h2>
+                                </section>
+                            </div>
+                        </section>
+                        <div class="calc-wrapper">
+                            <aside class="calculator is-sticky">
+                                <button class="button button--square js-toggle-calculator" data-ripple="light"><span class="button__icon">
+            <svg class="filter-show-icon" width="14px" height="16px">
+                <use xlink:href="#calc"></use>
+            </svg>
+        
+            <svg class="filter-hide-icon" width="9px" height="16px">
+                <use xlink:href="#arrow-big"></use>
+            </svg>
+        </span>
+                                </button>
+                                <form class="default-form" action="">
+                                    <fieldset class="default-form__fieldset">
+                                        <legend class="default-form__legend">Затраты
+                                        </legend>
+                                        <div class="input-default input-default--small">
+                                            <input class="input-default__input" required="required" name="expenses" type="text" value="6 500 000" />
+                                            <label class="input-default__label"><span class="input-default__placeholder">Цена выкупа, р</span>
+                                            </label>
+                                        </div>
+                                        <div class="input-default input-default--small">
+                                            <input class="input-default__input" required="required" name="expenses" type="text" value="10 000" disabled="disabled" />
+                                            <label class="input-default__label"><span class="input-default__placeholder">Подготовка, р</span>
+                                            </label>
+                                        </div>
+                                        <div class="input-default input-default--small">
+                                            <input class="input-default__input" required="required" name="expenses" type="text" value="6 510 000" />
+                                            <label class="input-default__label"><span class="input-default__placeholder">Затраты, р </span>
+                                            </label>
+                                        </div>
+                                        <div class="input-default input-default--small">
+                                            <input class="input-default__input" required="required" name="expenses" type="text" value="10%" />
+                                            <label class="input-default__label"><span class="input-default__placeholder">% затрат</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="default-form__fieldset">
+                                        <legend class="default-form__legend">Продажа
+                                        </legend>
+                                        <div class="input-default input-default--small icon-notification">
+                                            <input class="input-default__input" required="required" name="sale" type="text" value="99 650 000" />
+                                            <label class="input-default__label"><span class="input-default__placeholder">Цена продажи, р</span>
+                                            </label>
+                                        </div>
+                                        <div class="input-default input-default--small">
+                                            <input class="input-default__input" required="required" name="sale" type="text" value="110%" />
+                                            <label class="input-default__label"><span class="input-default__placeholder">% к рынку</span>
+                                            </label>
+                                        </div>
+                                        <div class="input-default input-default--small">
+                                            <input class="input-default__input" required="required" name="sale" type="text" value="6 из 22" />
+                                            <label class="input-default__label"><span class="input-default__placeholder">Рейтинг</span>
+                                            </label>
+                                        </div>
+                                        <div class="input-default input-default--small">
+                                            <input class="input-default__input" required="required" name="sale" type="text" value="6 из 22" />
+                                            <label class="input-default__label"><span class="input-default__placeholder">П-рейтинг</span>
+                                            </label>
+                                        </div>
+                                        <div class="default-form__desc">Срок продажи: <span>30 дней</span>
+                                            <br>% внимания: <span>95%</span>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="default-form__fieldset" disabled>
+                                        <legend class="default-form__legend">Доход
+                                        </legend>
+                                        <div class="input-default input-default--small">
+                                            <input class="input-default__input" required="required" name="income" type="text" value="150 000" />
+                                            <label class="input-default__label"><span class="input-default__placeholder">Маржа, руб</span>
+                                            </label>
+                                        </div>
+                                        <div class="input-default input-default--small">
+                                            <input class="input-default__input" required="required" name="income" type="text" value="15%" />
+                                            <label class="input-default__label"><span class="input-default__placeholder">% маржи</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </aside>
+                        </div>
+                        <footer class="content-footer">
+                            <form class="form" action="">
+                                <input class="input-simple" type="text" name="comment" placeholder="Комментарий к оценке">
+                            </form>
+                        </footer>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="link link--dark" href="#">Новости    </a>
+                    </li>
+                    <li class="footer__item"><a class="link link--dark" href="#">Разработчикам    </a>
+                    </li>
+                    <li class="footer__item"><a class="link link--dark" href="#">Правила   </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+
+
+        <script src="static/js/mainfuhzyjssx1myga1r1kyb9.min.js"></script>
+    </body>
+
+</html>

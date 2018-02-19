@@ -1,1 +1,33 @@
+.content-footer {
+	box-shadow: 0 -0.125rem 0.5rem rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  bottom: 60px;
+  right: 0;
+  width: calc(100% - 60px);
 
+  @include mq($from: desktop) {
+    width: calc(100% - 320px);
+  }
+}
+
+.input-simple {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  height: 34px;
+  border: 0.063rem solid #cccccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+  color: #000000;
+  color: $gray--700;
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 1.69;
+  padding: 0px 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} 

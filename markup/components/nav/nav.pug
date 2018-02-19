@@ -56,7 +56,7 @@ mixin nav(data)
 							!= pugHelpers.Icon.call(locals, {iconName: 'settings'})
 						span.nav-hide-content Настройки
 				+e.item
-					+e(data-ripple="light").BUTTON.link.js--show-full-nav
+					+e(data-ripple="light").BUTTON.link.js-show-full-nav
 						+e.SPAN.icon
 							!= pugHelpers.Icon.call(locals, {iconName: 'arrow-big', className: 'nav-arrow-icon'})
 						span.nav-hide-content Изменить вид

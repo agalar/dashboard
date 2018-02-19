@@ -164,6 +164,12 @@ p {
       }
     }
 
+    .content-footer {
+      @include mq($until: desktop-m) {
+        width: calc(100% - 240px);
+      }
+    }
+
     .filter {
       @include mq($until: desktop-m) {
         position: fixed !important;
@@ -241,21 +247,17 @@ p {
 
   &__main {
     width: calc(100% - 260px);
+    height: 100%;
+    padding-bottom: 60px;
     margin-left: auto;
     background-color: #fff;
+    position: relative;
 
     @include mq($until: desktop) {
       width: 100%;
     }
   }
 }
-
-
-
-
-
-
-
 
 
 

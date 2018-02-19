@@ -1,2 +1,130 @@
 mixin tabs(data)
-    .tabs
+	+b.tabs.js-tabs
+		+e.UL.tab-list(role='tablist')
+			+e(role='presentation')
+				+e.trigger.js-tab-trigger.button--transparent(href='#section-schedule', data-ripple="dark", role='tab', aria-controls='section-schedule') График
+
+			+e(role='presentation')
+				+e.trigger.js-tab-trigger.is-selected.button--transparent(href='#section-list', data-ripple="dark", role='tab', aria-controls='section-schedule') Список
+
+			+e(role='presentation')
+				+e.trigger.js-tab-trigger.button--transparent(href='#section-schedule', data-ripple="dark", role='tab', aria-controls='section-forecast') Прогноз
+
+
+		+e.SECTION.panel.js-tab-panel#section-schedule(role='tabpanel')
+			h2  
+				|Lorem ipsum dolor
+				br
+				|sit amet, consectetur adipisicing elit. Possimus, 
+				br
+				|blanditiis placeat, cupiditate atque consequuntur 
+				br
+				|optio modi quibusdam. Quasi, ratione 
+				br
+				|et veritatis! Nemo recusandae libero, 
+				br
+				|amet optio, nisi accusamus 
+				br
+				|doloribus minima!
+				|Lorem ipsum dolor
+				br
+				|sit amet, consectetur adipisicing elit. Possimus, 
+				br
+				|blanditiis placeat, cupiditate atque consequuntur 
+				br
+				|optio modi quibusdam. Quasi, ratione 
+				br
+				|et veritatis! Nemo recusandae libero, 
+				br
+				|amet optio, nisi accusamus 
+				br
+				|doloribus minima!
+				|Lorem ipsum dolor
+				br
+				|sit amet, consectetur adipisicing elit. Possimus, 
+				br
+				|blanditiis placeat, cupiditate atque consequuntur 
+				br
+				|optio modi quibusdam. Quasi, ratione 
+				br
+				|et veritatis! Nemo recusandae libero, 
+				br
+				|amet optio, nisi accusamus 
+				br
+				|doloribus minima!
+				|Lorem ipsum dolor
+				br
+				|sit amet, consectetur adipisicing elit. Possimus, 
+				br
+				|blanditiis placeat, cupiditate atque consequuntur 
+				br
+				|optio modi quibusdam. Quasi, ratione 
+				br
+				|et veritatis! Nemo recusandae libero, 
+				br
+				|amet optio, nisi accusamus 
+				br
+				|doloribus minima!
+
+
+
+		
+		+e.SECTION.panel.js-tab-panel#section-list(role='tabpanel')
+			+table()
+
+
+		
+		+e.SECTION.panel.js-tab-panel#section-forecast(role='tabpanel')
+			h2
+				|Lorem ipsum dolor
+				br
+				|sit amet, consectetur adipisicing elit. Possimus, 
+				br
+				|blanditiis placeat, cupiditate atque consequuntur 
+				br
+				|optio modi quibusdam. Quasi, ratione 
+				br
+				|et veritatis! Nemo recusandae libero, 
+				br
+				|amet optio, nisi accusamus 
+				br
+				|doloribus minima!
+				|Lorem ipsum dolor
+				br
+				|Lorem ipsum dolor
+				br
+				|sit amet, consectetur adipisicing elit. Possimus, 
+				br
+				|blanditiis placeat, cupiditate atque consequuntur 
+				br
+				|optio modi quibusdam. Quasi, ratione 
+				br
+				|et veritatis! Nemo recusandae libero, 
+				br
+				|amet optio, nisi accusamus 
+				br
+				|doloribus minima!
+				|Lorem ipsum dolor
+				br
+				|sit amet, consectetur adipisicing elit. Possimus, 
+				br
+				|blanditiis placeat, cupiditate atque consequuntur 
+				br
+				|optio modi quibusdam. Quasi, ratione 
+				br
+				|et veritatis! Nemo recusandae libero, 
+				br
+				|amet optio, nisi accusamus 
+				br
+				|doloribus minima!
+				|sit amet, consectetur adipisicing elit. Possimus, 
+				br
+				|blanditiis placeat, cupiditate atque consequuntur 
+				br
+				|optio modi quibusdam. Quasi, ratione 
+				br
+				|et veritatis! Nemo recusandae libero, 
+				br
+				|amet optio, nisi accusamus 
+				br
+				|doloribus minima!

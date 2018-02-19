@@ -1,6 +1,6 @@
-mixin input(text, id, name, parentClass, childClass, type, value)
+mixin input(text, id, name, parentClass, childClass, type, value, disabled)
 	+b.input-default(class= attributes.parentClass)
-		+e.INPUT.input(required, id=attributes.id, name=attributes.name, class= attributes.childClass, type=attributes.type, value=attributes.value)
+		+e.INPUT.input(required, id=attributes.id, name=attributes.name, class= attributes.childClass, type=attributes.type, value=attributes.value, disabled=attributes.disabled)
 		if attributes.type === 'password'
 			button(type="button").js-show-password 
 				!= pugHelpers.Icon.call(locals, {iconName: 'password'})

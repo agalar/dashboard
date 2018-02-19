@@ -1,5 +1,5 @@
 mixin filter(data)
-	+b.ASIDE.filter
+	+b.ASIDE.filter.is-sticky
 		+b(data-ripple="light").BUTTON.button--square.js-toggle-filter
 			+e.SPAN.icon
 				!= pugHelpers.Icon.call(locals, {iconName: 'filter', className: 'filter-show-icon', iconWidth: '16'})
@@ -7,5 +7,213 @@ mixin filter(data)
 		+e.inner.js-custom-scroll
 			h5 Параметры подбора
 
-			p
-				|Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita the-endthe-endthe-endthe-endthe-endthe-end
+			
+
+			+e.UL.list
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Регион: 
+					a(href="#").link Москва 
+					+e.SPAN.count 7
+
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Срок: 
+					a(href="#").link Актуальные 
+					+e.SPAN.count 7
+
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Продавцы: 
+					a(href="#").link Все 
+					+e.SPAN.count 7
+
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Сайты: 
+					a(href="#").link Все 
+					+e.SPAN.count 7
+
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Год выпуска: 
+					a(href="#").link 2007-2008 
+					+e.SPAN.count 7
+
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Поколение: 
+					a(href="#").link Рестайлинг 
+					+e.SPAN.count 7
+				
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Кузов: 
+					a(href="#").link Внедорожник 5 дв 
+					+e.SPAN.count 7
+				
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name КПП: 
+					a(href="#").link Автомат 
+					+e.SPAN.count 7
+				
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Двигатель: 
+					a(href="#").link Бензин 
+					+e.SPAN.count 7
+				
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Объем: 
+					a(href="#").link От 3.4 л до 3.6 л 
+					+e.SPAN.count 7
+				
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Мощность: 
+					a(href="#").link От 221 лс до 331 л 
+					+e.SPAN.count 7
+				
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Привод: 
+					a(href="#").link Полный 
+					+e.SPAN.count 7
+				
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Руль: 
+					a(href="#").link Левый 
+					+e.SPAN.count 7
+				
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Модели-близнецы: 
+					a(href="#").link Не показывать
+
+				+e.item(tabindex="0")
+					button.button-delete.js-delete-filter-item
+						!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+					+e.SPAN.name Антипробуксовочная система: 
+					a(href="#").link Не указано
+
+				
+
+
+			button.link.js-toggle-filter-options
+				span Добавить опции
+				!= pugHelpers.Icon.call(locals, {iconName: 'arrow-small', className: 'arrow-small-blue'})
+
+
+
+			+e.more.more-filter-items
+				+input(text = 'Поиск опции', name = 'login-form', type = 'search')
+
+				+e.UL.list
+					+e.item(tabindex="0")
+						button.button-delete.js-delete-filter-item
+							!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+						+e.SPAN.name Климат: 
+						a(href="#").link Однозонный 
+						+e.SPAN.count 5
+
+					+e.item(tabindex="0")
+						button.button-delete.js-delete-filter-item
+							!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+						+e.SPAN.name Сигнализация: 
+						a(href="#").link Есть 
+						+e.SPAN.count 7
+
+					+e.item(tabindex="0")
+						button.button-delete.js-delete-filter-item
+							!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+						+e.SPAN.name АВС: 
+						a(href="#").link Есть 
+						+e.SPAN.count 7
+
+					+e.item(tabindex="0")
+						button.button-delete.js-delete-filter-item
+							!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+						+e.SPAN.name Иммобилайзер: 
+						a(href="#").link Есть 
+						+e.SPAN.count 7
+
+					+e.item(tabindex="0")
+						button.button-delete.js-delete-filter-item
+							!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+						+e.SPAN.name Центральный замок: 
+						a(href="#").link Есть 
+						+e.SPAN.count 7
+
+					+e.item(tabindex="0")
+						button.button-delete.js-delete-filter-item
+							!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+						+e.SPAN.name Люк: 
+						a(href="#").link Есть 
+						+e.SPAN.count 7
+
+					+e.item(tabindex="0")
+						button.button-delete.js-delete-filter-item
+							!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+						+e.SPAN.name Диски: 
+						a(href="#").link Есть 
+						+e.SPAN.count 7
+
+					+e.item(tabindex="0")
+						button.button-delete.js-delete-filter-item
+							!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+						+e.SPAN.name Ксенон: 
+						a(href="#").link Есть 
+						+e.SPAN.count 7
+
+					+e.item(tabindex="0")
+						button.button-delete.js-delete-filter-item
+							!= pugHelpers.Icon.call(locals, {iconName: 'delete'})
+						+e.SPAN.name Электропривод сидений с памятью: 
+						a(href="#").link Есть 
+						+e.SPAN.count 5
+
+					
+
+
+
+					
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

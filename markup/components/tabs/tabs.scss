@@ -1,1 +1,35 @@
+.tabs {
+  padding: 20px;
+  background-color: #fff;
+  &__tab-list {
+    display: flex;
+  }
+
+  &__trigger {
+
+    &.button {
+      &:hover {
+        background-color: $gray--200;
+      }
+    }
+    &.is-selected {
+      background-color: $gray--200;
+    }
+  }
+
+  &__panel {
+    display: none;
+    padding: 20px 0;
+    outline: none;
+
+    .is-initialized & {
+      display: inherit;
+    }
+
+    &.is-hidden {
+        display: none;
+    }
+  }
+
+}
 

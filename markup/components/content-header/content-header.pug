@@ -1,45 +1,52 @@
 mixin content-header(data)
 	+b.HEADER.content-header
+		+b.TABLE.table-header
+			thead
+				tr
+					th Авто на рынке
 
-		+car-info()
+					th Средний пробег
 
-		+b.TABLE.simple-table
-			tr
-				td Оценка
-				td В процессе
+					th Средняя цена
 
-			tr
-				td Обновлена
-				td 30.09.17
+					th Коррекция по пробегу
 
-			tr
-				td Склад
-				td 
-					a(href="#").link Поставить на склад
+					th Мин. цена нового
 
-		+b.TABLE.simple-table
-			tr
-				td Контракт
-				td Комиссия
+					+e.TH.info Скоринг
 
-			tr
-				td Менеджер
-				td Петров Иван
 
-			tr
-				td Оценщик
-				td Сидоров Олег
 
-		+b.TABLE.simple-table
-			tr
-				td Клиент
 
-				td Иванов Иван Иванович
 
-			tr
-				td Телефон
-				td
-					a(href="tel:8 (812) 222-22-22") 8 (812) 222-22-22
+
+			tbody
+				tr
+					td 7 шт 
+						+e.SPAN.count (2) 
+				
+					td 169 147 км
+
+					td 386 143 ₽
+
+					td + 32 963 ₽
+
+					td 300 000 000 ₽
+
+					+e.TD.info
+						+e.SPAN.notifi 1
+						|46 дней
+
+						+e.icon
+							!= pugHelpers.Icon.call(locals, {iconName: 'help', className: 'icon-help-gray'})
+						
+						+b.tooltip--right
+							+e.inner
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo dolore quibusdam fuga eum sapiente
+
+
+
+		
 
 
 

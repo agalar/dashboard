@@ -2,10 +2,12 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
-    include ../components/footer/footer.pug
     include ../components/header/header.pug
-    include ../components/product-item/product-item.pug
-    include ../components/breadcrumbs/breadcrumbs.pug
+    include ../components/content-header/content-header.pug
+    include ../components/nav/nav.pug
+    include ../components/filter/filter.pug
+    include ../components/ui/input/input.pug
+    include ../components/footer/footer.pug
 
 
 
@@ -17,20 +19,26 @@ html(class="no-js", lang="ru")
 
     body
         |%=symbols=%
-        
-        +header()
 
+        .page-container
 
-        main.content
-            +b.SECTION.default-section
-                +breadcrumbs('Главная', 'Lookbook')
-                
-                +b.HEADER.default-header
-                    h2.h2 Lookbook
+            +nav()
             
+            +header()
+
+            +b.MAIN.content
+
+                +content-header()
+
+                +e.inner
+                    +filter()
+
+                    +e.main
+
+                        
 
 
-        +footer()
+            +footer()
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')
 
@@ -38,5 +46,3 @@ html(class="no-js", lang="ru")
 
         //- Main scripts. You can replace it, but I recommend you to leave it here
         script(src='%=static=%js/main%=hash=%%=min=%.js')
-
-        script(src='%=static=%js/separate-js/common.js')

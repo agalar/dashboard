@@ -5,6 +5,7 @@
   background-color: #fff;
   position: sticky;
   top: 60px;
+  z-index: 2;
 
   > .button {
     display: none;
@@ -16,7 +17,7 @@
     position: fixed !important;
     left: -200px;
     transition: transform 0.5s $cubic;
-
+    
     > .button {
       display: flex;
       position: absolute;
@@ -55,16 +56,66 @@
     width: 100%;
     height: 100%;
     padding: 20px;
-    padding-bottom: 60px;
+    display: block;
+    overflow-y: auto;
+  }
+
+  &__list {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    transition: transform 0.35s $cubic 50ms;
+    line-height: 1;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(-16px);
+    
+    &:hover, &:focus {
+      will-change: transform;
+      transform: translateX(-3px);
+    }
+
+    &--delete {
+      transform: translateX(110%);
+      transition: transform 0.5s $ease;
+
+      &:hover {
+        transform: translateX(120%);
+      }
+    }
+
+    .link {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 115px;
+      white-space: nowrap;
+    }
+  }
+
+  &__name {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 115px;
+    white-space: nowrap;
+    margin-right: 3px;
+  }
+
+  &__count {
+    color: $gray--400;
+    font-size: 0.688rem;
+    display: inline-block;
+    margin-left: 5px;
   }
 
 
   .filter-show-icon, .filter-hide-icon {
     transition: opacity 0.4s ease-out;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .filter-hide-icon {
@@ -72,4 +123,92 @@
     opacity: 0;
   }
 }
+
+.button-delete {
+  padding: 4px;
+
+  svg {
+    fill: $gray--400;
+  }
+}
+
+.button-hide {
+  span {
+    font-size: 0;
+  }
+  &::before {
+    content: 'Скрыть';
+    font-size: 0.813rem;
+  }
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.arrow-small-blue {
+  fill: $blue--dark;
+}
+
+
+
+.more-filter-items {
+
+  .input-default {
+    @include hide-animated-blocks();
+    transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 0s ease-out, max-height 0s ease-out;
+  }
+
+  @for $i from 1 through 15 {
+    .filter__item:nth-child(#{$i}) {
+      transition: transform 300ms ease-out (25ms * ($i - 1)), opacity 300ms ease-out (25ms * ($i - 1)), visibility 0s ease-out, max-height 0s ease-out;
+    }
+  }
+  
+  .filter__item {
+    margin-left: -16px;
+    @include hide-animated-blocks();
+  }
+
+  &--active {
+    .input-default {
+      @include show-animated-blocks();
+    }
+
+    .filter__item {
+      @include show-animated-blocks();
+
+      &:hover {
+        transform: translateX(0px);
+      }
+    }
+  }
+}
+
+.filter-show-icon, .filter-hide-icon {
+  transition: opacity 0.4s ease-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.filter-hide-icon {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

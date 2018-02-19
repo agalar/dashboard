@@ -4,16 +4,15 @@ html(class="no-js", lang="ru")
 	include ../components/head/head.pug
 	include ../components/header/header.pug
 	include ../components/content-header/content-header.pug
+	include ../components/sub-header/sub-header.pug
 	include ../components/nav/nav.pug
 	include ../components/filter/filter.pug
-
-	include ../components/car-info/car-info.pug
-
+	include ../components/calculator/calculator.pug
+	include ../components/tabs/tabs.pug
+	include ../components/table/table.pug
+	include ../components/ui/input/input.pug
 	include ../components/footer/footer.pug
-
-
-
-
+	include ../components/content-footer/content-footer.pug
 
 
 	head
@@ -30,14 +29,28 @@ html(class="no-js", lang="ru")
 
 			+b.MAIN.content
 
-				+content-header()
+				+sub-header()
 
 				+e.inner
 					+filter()
 
 					+e.main
+						+content-header()
 
-						h1  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitaon exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad il.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitaon exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad il.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitaon exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitationem repudiandae nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consectetur perspiciatis ad aut! Magni odit deleniti facere expedita blanditiis et, officia cum nam optio adipisci cupiditate non exercitationem repudiandae nihil.
+						section.page-content
+
+							+tabs()
+
+						.calc-wrapper
+
+							+calculator()
+
+
+						+content-footer()
+
+						
+
+
 
 
 			+footer()
@@ -48,5 +61,8 @@ html(class="no-js", lang="ru")
 
 		//- Main scripts. You can replace it, but I recommend you to leave it here
 		script(src='%=static=%js/main%=hash=%%=min=%.js')
-
-		script(src='%=static=%js/separate-js/common.js')
+		
+		//- для ие подключаем полифилл на позицию стики
+		script.
+					
+			stickybits('.is-sticky', {stickyBitStickyOffset: 60});

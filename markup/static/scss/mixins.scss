@@ -52,6 +52,46 @@ $query: false;
   $query: false !global;
 }
 
+@mixin hide-animated-blocks($output: false) {
+  @if $output or $query {
+    position: absolute;
+    left: -9999px;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+    overflow: hidden;
+    max-height: 0;
+  }
+  @else {
+    @extend %hide-animated-blocks;
+  }
+}
+
+%hide-animated-blocks {
+  @include hide-animated-blocks(true);
+}
+
+@mixin show-animated-blocks($output: false) {
+  @if $output or $query {
+    opacity: 1;
+    max-height: 10000px;
+    left: auto;
+    overflow: visible;
+    visibility: visible;
+    transform: translateY(0px);
+    position: relative;
+    pointer-events: auto;
+    will-change: transform, opacity;
+  }
+  @else {
+    @extend %show-animated-blocks;
+  }
+}
+
+%show-animated-blocks {
+  @include show-animated-blocks(true);
+}
 
 
 @mixin hide-animated-side($output: false) {

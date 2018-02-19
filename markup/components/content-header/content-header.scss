@@ -1,41 +1,173 @@
 .content-header {
-	margin-bottom: 15px;
-  box-shadow: 0 0.063rem 0.125rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  @include container();
-  padding-bottom: 16px;
-  
-  .car-info {
-    padding-top: 16px;
-  }
-
-  .simple-table {
-    margin-top: 14px;
-  }
+  padding: 17px 20px;
+  height: 80px;
+  border-bottom: 1px solid $gray--300;
 
 }
 
+.table-header {
+  width: 100%;
 
-.simple-table {
-  margin: -3px 20px -3px 0;
-  td {
-    line-height: 1.54;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 200px;
-    white-space: nowrap;
+  &__count {
+    font-size: 0.813rem;
+    font-weight: 400; 
+  }
 
-    &:first-child {
+  &__info {
+    padding-left: 50px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    .tooltip {
+      margin-bottom: -2px;
+      margin-left: 8px;
+    }
+
+    &:hover {
+      .tooltip__inner {
+        will-change: transform, opacity;
+        transform: translate3d(-50%,10px,0) rotate3d(0,0,0,0);
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transition: transform .25s ease-out 0.1s, opacity .25s ease-out 0.1s, visibility 0s ease-out 0s;
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    margin-left: 8px;
+    margin-bottom: -2px;
+  }
+
+  &__notifi {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: $red;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  thead {
+    th {
       color: $gray--600;
-      padding-right: 10px;
+      font-size: 0.813rem;
+      font-weight: 400;
+      line-height: 1.5;
     }
+  }
 
-    &:last-child {
+  tbody {
+    td {
       color: $gray--700;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.5;
     }
   }
 }
+
+.icon-help-gray {
+  fill: $gray--400;
+}
+
+
+$tooltip-width: 250px; 
+
+.tooltip {
+  position: relative;
+
+  &__inner {
+    position: absolute;
+    top: 100%;
+    border: 1px solid $gray--300;
+    background-color: #ffffff;
+    transform: translate3d(-50%, 20px, 0) rotate3d(1,1,0,25deg);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    padding: 20px;
+    z-index: 2;
+    min-width: $tooltip-width;
+    transition: transform 0.25s ease-out, opacity 0.25s ease-out, visibility 0s ease-out 0.35s;
+    color: $gray--700;
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 1.54;
+    text-align: left;
+
+    @include ie-and-edge() {
+      min-width: 170px;
+      max-width: 170px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -35px;
+      left: 0;
+      height: 35px;
+      width: 100%;
+      max-width: 250px;
+      display: block;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 50%;
+      background-color: #fff;
+      width: 10px;
+      height: 10px;
+      border-right: 1px solid $gray--300;
+      border-top: 1px solid $gray--300;
+      transform: translateX(-67%) rotate(-45deg);
+      transform-origin: top left;
+    }
+  }
+
+  &--left {
+    .tooltip__inner {
+      left: $tooltip-width / 3;
+
+      &::after {
+        left: $tooltip-width / 10;
+      }
+    }
+  }
+
+  &--right {
+    .tooltip__inner {
+      left: - $tooltip-width / 2.4;
+      &::after {
+        left: auto;
+        right: $tooltip-width / 10;
+
+        @include ie-and-edge() {
+          right: 3px;
+        }
+      }
+    }
+  }
+
+
+
+
+}
+
+
+
+
+

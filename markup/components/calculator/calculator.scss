@@ -1,1 +1,169 @@
+.calculator {
+	width: 300px;
+  height: calc(100vh - 120px);
+  position: sticky;
+  overflow: hidden;
+  top: 60px;
+  right: 0px;
+  pointer-events: none;
+  z-index: 4;
 
+  @include edge-only() {
+    position: fixed !important;
+  }
+
+  > .button {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    pointer-events: auto;
+    transform: translateX(260px);
+    transition: transform 0.5s $cubic;
+  }
+
+  .default-form {
+    width: 260px;
+    transform: translateX(296px);
+    background-color: #fff;
+    box-shadow: -0.062rem 0.062rem 0 $gray--300;
+    pointer-events: auto;
+  }
+
+  &--active {
+    .default-form {
+      transform: translateX(36px);
+    }
+
+    > .button {
+      background-color: $gray--200;
+      transform: translateX(0px);
+
+      &:hover {
+        background-color: darken($gray--200, 10)
+      }
+
+      svg {
+        fill: $gray--400;
+        transition: opacity 0.5s ease-o
+      }
+
+      .filter-show-icon {
+        opacity: 0;
+      }
+
+      .filter-hide-icon {
+        opacity: 1;
+      }
+
+    }
+  }
+}
+
+.page-content {
+  position: relative;
+}
+
+.calc-wrapper {
+  position: absolute;
+  height: calc(100% - 80px);
+  top: 80px;
+  right: 0px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.default-form {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: transform 0.5s $cubic;
+
+  &__fieldset {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    padding-top: 30px;
+    border-bottom: 1px solid $gray--300;
+    position: relative;
+
+    .input-default {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-top: 30px;
+
+      &:nth-child(even) {
+        margin-right: 18px;
+      }
+
+      &:nth-child(1), &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+
+    &:disabled {
+      background-color: $gray--200;
+
+      .default-form__legend {
+        opacity: 0.7;
+
+        &::after {
+          background-image: url('%=static=%content/bg-sprite/locked.svg');
+        }
+      }
+
+      .input-default__input {
+        color: $gray--700;
+        opacity: 0.7;
+      }
+
+      .input-default__placeholder {
+        color: $gray--600;
+        opacity: 0.7;
+      }
+
+      .input-default__label {
+        opacity: 0.7;
+      }
+
+    }
+  }
+
+  &__legend {
+    color: $gray--700;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5;
+    width: calc(100% - 40px);
+    position: absolute;
+    top: 15px;
+    
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 20px;
+      background-image: url('%=static=%content/bg-sprite/unlocked.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+      float: right;
+      pointer-events: none;
+    }
+  }
+
+  &__desc {
+    margin-top: 16px;
+    color: $gray--600;
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 2.15;
+
+    span {
+      color: $gray--700;
+    }
+  }
+}

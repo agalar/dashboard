@@ -1,2 +1,62 @@
 mixin calculator(data)
-    .calculator
+	+b.ASIDE.calculator.is-sticky
+		+b(data-ripple="light").BUTTON.button--square.js-toggle-calculator
+			+e.SPAN.icon
+				!= pugHelpers.Icon.call(locals, {iconName: 'calc', className: 'filter-show-icon'})
+				!= pugHelpers.Icon.call(locals, {iconName: 'arrow-big', className: 'filter-hide-icon'})
+
+		+b.FORM.default-form(action="")
+			+e.FIELDSET.fieldset
+				+e.LEGEND.legend Затраты
+
+				+input(text = 'Цена выкупа, р', name = 'expenses', type = 'text', value="6 500 000", parentClass="--small")
+				
+				+input(text = 'Подготовка, р', name = 'expenses', type = 'text', value="10 000", parentClass="--small", disabled="disabled")
+
+				+input(text = 'Затраты, р ', name = 'expenses', type = 'text', value="6 510 000", parentClass="--small")
+
+				+input(text = '% затрат', name = 'expenses', type = 'text', value="10%", parentClass="--small")
+
+			+e.FIELDSET.fieldset
+				+e.LEGEND.legend Продажа
+
+				+input(text = 'Цена продажи, р', name = 'sale', type = 'text', value="99 650 000", parentClass="--small icon-notification")
+
+				+input(text = '% к рынку', name = 'sale', type = 'text', value="110%", parentClass="--small")
+
+				+input(text = 'Рейтинг', name = 'sale', type = 'text', value="6 из 22", parentClass="--small")
+
+				+input(text = 'П-рейтинг', name = 'sale', type = 'text', value="6 из 22", parentClass="--small")
+
+
+				+e.desc
+					|Срок продажи: 
+					span 30 дней
+					br
+					|% внимания: 
+					span 95%
+
+
+
+
+
+			+e.FIELDSET.fieldset(disabled)
+				+e.LEGEND.legend Доход
+
+				+input(text = 'Маржа, руб', name = 'income', type = 'text', value="150 000", parentClass="--small")
+
+				+input(text = '% маржи', name = 'income', type = 'text', value="15%", parentClass="--small")
+
+
+
+
+
+
+
+
+
+				
+				
+
+
+

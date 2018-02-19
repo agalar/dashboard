@@ -1,5 +1,12 @@
 module.exports = {
-    "postcss": [],
+    "postcss": [
+        {
+            name: 'postcss-pxtorem',
+            options: {
+                // replace: false
+            }
+        }
+    ],
     "svg": {
         "active": true,
         "workflow": "symbols",

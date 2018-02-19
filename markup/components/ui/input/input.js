@@ -1,4 +1,3 @@
-
 (function() {
 	// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
 	if (!String.prototype.trim) {
@@ -42,6 +41,12 @@ function iosBugFixCaret() {
     iOS = /iPad|iPhone|iPod/.test(ua),
     iOS11 = /OS 11_0_1|OS 11_0_2|OS 11_0_3|OS 11_1|OS 11_2/.test(ua);
 
+    var html = document.getElementsByTagName( 'html' )[0]; 
+	var body = document.getElementsByTagName( 'body' )[0]; 
+
+    if (iOS) {
+		html.classList.add('ios');
+	}
     // ios 11 bug caret position
     if ( iOS && iOS11 ) {
 
@@ -62,5 +67,13 @@ function iosBugFixCaret() {
 
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+	
+	iosBugFixCaret(); // Фикс сдвига инпута на айоси 11
+
+});
+
 
 

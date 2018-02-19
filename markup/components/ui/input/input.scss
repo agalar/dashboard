@@ -4,7 +4,16 @@
   height: 36px;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+
+
+  &.icon-notification {
+
+    &::after {
+      right: 0;
+    }
+    
+  }
 
   input[type="date"] {
     text-align: right;
@@ -45,8 +54,9 @@
       content: "";
       position: absolute;
       bottom: 0;
+      transform: translateY(-0.5px) translateZ(0);
       left: 0;
-      background-color: $blue--light;
+      background-color: $gray--400;
       width: 100%;
       height: 1px;
       -webkit-font-smoothing: antialiased;
@@ -76,7 +86,7 @@
       pointer-events: none;
       background-color: $blue;
       width: 100%;
-      height: 1px;
+      height: 2px;
       transition: transform 0.25s cubic-bezier(0, 0.25, 0.5, 1);
       transform: scale3d(0.0, 1.0, 1.0);
       transform-origin: left;
@@ -96,19 +106,22 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: translateZ(0px);
+    -webkit-transform: translateZ(0px);
     line-height: 2;
     z-index: 2;
     outline: none;
     pointer-events: auto;
-    color: #111111;
+    color: $gray--700;
+    font-size: 0.875rem;
+
 
     &:focus{
-      + .input-default__label{
+      + .input-default__label {
 
         .input-default__placeholder {
           transform: translate3d(0, -16px, 0) scale3d(0.75, 0.75, 1);
-          opacity: 0.4;
+          color: #247eb3;
+
         }
 
         &::after {
@@ -118,6 +131,23 @@
 
       ~ .hint-message {
         opacity: 0;
+      }
+    }
+
+    &:disabled {
+      color: #000;
+      opacity: 0.7;
+
+      + .input-default__label {
+
+        .input-default__placeholder {
+          color: $gray--400;
+
+        }
+
+        &::after {
+          transform: scale3d(0.0, 1.0, 1.0);
+        }
       }
     }
 
@@ -135,7 +165,7 @@
 
   &__placeholder {
     transform-origin: 0 0;
-    transition: transform 0.2s cubic-bezier(0, 0.25, 0.5, 1), opacity 0.2s cubic-bezier(0, 0.25, 0.5, 1);
+    transition: transform 0.2s cubic-bezier(0, 0.25, 0.5, 1), color 0.2s cubic-bezier(0, 0.25, 0.5, 1);
     pointer-events: none;
     will-change: transform;
     z-index: 2;
@@ -190,7 +220,7 @@
   }
 
   &--small {
-    width: calc(50% - 15px);
+    width: calc(50% - 11px);
   }
 
 
@@ -198,11 +228,11 @@
     .input-default__label {
       .input-default__placeholder {
         transform: translate3d(0, -16px, 0) scale3d(0.75, 0.75, 1);
-        opacity: 0.4;
+        // color: #247eb3;
       }
 
       &::after {
-        transform: scale3d(1.0, 1.0, 1.0);
+        transform: scale3d(0.0, 1.0, 1.0);
       }
     }
 

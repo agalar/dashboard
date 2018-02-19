@@ -44,6 +44,7 @@
     transform: translateX(180px) translateZ(0);
     transition: transform 0.5s $cubic 100ms;
     overflow: hidden;
+    overflow-y: auto;
 
     @include ie-and-edge() {
       transform: translateX(180px);

@@ -1,1 +1,137 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
 
+
+	&__thead {
+    
+  }
+
+  &__th {
+    color: $gray--500;
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 1.54;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 115px;
+    white-space: nowrap;
+
+    button {
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      text-align: left;
+      color: $gray--500;
+    }
+  }
+
+  &__row {
+    border-top: 1px solid $gray--300;
+    border-bottom: 1px solid $gray--300;
+    transition: background-color 0.1s ease-out;
+    position: relative;
+
+    &:hover {
+      .add-remove {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+
+    &--selected {
+      background-color: $aquamarine;
+
+      .add-remove {
+        display: none;
+      }
+    }
+
+    &.is-excluded {
+      background-color: $gray--200;
+      opacity: 0.7;
+      pointer-events: none;
+      .add-remove {
+        pointer-events: auto;
+        
+        &::after {
+          background-image: url('%=static=%content/bg-sprite/exclude.svg');
+        }
+      }
+    }
+  
+    .add-remove {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      z-index: 1;
+      opacity: 0;
+      pointer-events: none;
+
+      @include ie-only {
+        transform: none;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 16px;
+        height: 16px;
+        transform: translate(-50%, -50%);
+        background-image: url('%=static=%content/bg-sprite/add.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include ie-only {
+          transform: translate(0%, -50%);
+        }
+      }
+    }
+
+    
+  }
+
+  &__td {
+    color: $gray--700;
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 1.54;
+    padding: 15px;
+    vertical-align: top;
+    position: relative;
+  }
+
+  &__price {
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 115px;
+    white-space: nowrap;
+  }
+
+  &__desc {
+    display: block;
+    opacity: 0.7;
+    color: $gray--500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 160px;
+    white-space: nowrap;
+  }
+
+  .link {
+    display: block;
+    line-height: 1.54;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 222px;
+    white-space: nowrap;
+  }
+}
